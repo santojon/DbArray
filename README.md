@@ -1,4 +1,4 @@
-# Bhdr (Brynhildr) .findBy({ A javascript data pool: to simulate a database })
+# DbArray - Array with extras
 
 ## (Dev) Installation
  - npm install    
@@ -7,13 +7,4 @@
  - tsc
 
 ## Create bundle (browserify)
- - npm run bundle    
-
-## Run tests (mocha - chai)
- - npm test (or npm run test)    
-
-## Test compile files (test js files)
- - npm run test-js    
-
-## Test bundled code (change browser in package.json script if needed [using chrome])
- - npm run test-browser
+ - npm run bundle
