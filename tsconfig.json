@@ -1,0 +1,29 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "declaration": true,
+        "pretty": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "sourceRoot": "./",
+        "declarationDir": "./types/",
+        "outDir": "./dist/",
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "noImplicitUseStrict": true,
+        //"noUnusedParameters": true,
+        "lib": [
+            "dom",
+            "es2015",
+            "es2017"
+        ]
+    },
+    "include": [
+        "./*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

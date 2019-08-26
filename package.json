@@ -1,0 +1,33 @@
+{
+	"name": "dbarray",
+	"version": "1.0.2",
+	"description": "Array with extras",
+	"main": "./dist/lib/DbArray.js",
+	"directories": {
+		"dist": "dist"
+	},
+	"scripts": {
+		"bundle": "browserify ./dist/DbArray.js -o ./dist/lib/DbArray.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/santojon/Bhdr.git"
+	},
+	"keywords": [
+		"javascript",
+		"typescript",
+		"database",
+		"dbarray"
+	],
+	"author": "Jonathan Santos (@santojon)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/santojon/DbArray/issues"
+	},
+	"homepage": "https://github.com/santojon/DbArray#readme",
+	"devDependencies": {
+		"browserify": "^16.5.0",
+		"ts-node": "^8.3.0",
+		"typescript": "^3.5.3"
+	}
+}
