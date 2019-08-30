@@ -5,9 +5,9 @@
         "pretty": true,
         "removeComments": true,
         "sourceMap": true,
-        "sourceRoot": "./",
+        "sourceRoot": "./src/main",
         "declarationDir": "./types/",
-        "outDir": "./dist/",
+        "outDir": "./dist/lib",
         "moduleResolution": "node",
         "module": "commonjs",
         "target": "es5",
@@ -21,9 +21,10 @@
         ]
     },
     "include": [
-        "./*"
+        "src/main/*"
     ],
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "**/*.spect.ts"
     ]
 }

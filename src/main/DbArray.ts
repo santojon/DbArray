@@ -8,7 +8,7 @@ class DbArray<T> extends Array<T> {
      * @param val: the value to remove
      */
     remove(val: T): DbArray<T> {
-        let a = new DbArray<T>()
+        let a: DbArray<T> = new DbArray<T>()
         let aux = this.filter((e: T) => { e !== val })
 
         aux.forEach((val: T) => {
@@ -21,7 +21,7 @@ class DbArray<T> extends Array<T> {
      * Remove all duplicated values from array
      */
     distinct(): DbArray<T> {
-        let a = new DbArray<T>()
+        let a: DbArray<T> = new DbArray<T>()
         let aux = this.sort().filter((item: any, pos: number, array: any): any => {
             return !pos || item != array[pos - 1]
         })
@@ -95,7 +95,7 @@ class DbArray<T> extends Array<T> {
      * First element as an array
      */
     head(): DbArray<T> {
-        let a = new DbArray<T>()
+        let a: DbArray<T> = new DbArray<T>()
         if (this.length > 0) {
             a.push(this[0])
         }
@@ -106,7 +106,7 @@ class DbArray<T> extends Array<T> {
      * Last element as an array
      */
     lst(): DbArray<T> {
-        let a = new DbArray<T>()
+        let a: DbArray<T> = new DbArray<T>()
         if (this.length > 0) {
             a.push(this[this.length - 1])
         }
