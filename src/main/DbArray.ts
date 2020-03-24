@@ -5,7 +5,7 @@
 class DbArray<T> extends Array<T> {
     /**
      * Remove a value from array (all occurences)
-     * @param val: the value to remove
+     * @param {T} val: the value to remove
      */
     remove(val: T): DbArray<T> {
         let a: DbArray<T> = new DbArray<T>()
@@ -41,14 +41,14 @@ class DbArray<T> extends Array<T> {
 
     /**
      * Order an array of objects by fields
-     * @param {string} field: the field to order by
-     * @param {string} order: 'desc' to order descending
+     * @param {String} field: the field to order by
+     * @param {String} order: 'desc' to order descending
      * @param {Function} rfunc: function to restrict compairson scope (if needed)
      */
-    orderBy(field: string, order: any, rfunc: Function): DbArray<T> {
+    orderBy(field: String, order: any, rfunc: Function): DbArray<T> {
         let key = rfunc ?
-            (x: any): object => { return rfunc(x[field]) } :
-            (x: any): object => { return x[field] }
+            (x: any): Object => { return rfunc(x[field.toString()]) } :
+            (x: any): Object => { return x[field.toString()] }
 
         order = (order === 'desc') ? -1 : 1
 
@@ -64,13 +64,13 @@ class DbArray<T> extends Array<T> {
 
     /**
      * Calculate average of numeric fields
-     * @param {string} field: the field to calculate avg
+     * @param {String} field: the field to calculate avg
      */
-    avg(field: string): number {
+    avg(field: String): Number {
         if (this.count() > 0) {
-            let r: any = []
+            let r: Array<any> = []
             this.forEach((k: any) => {
-                r.push(k[field])
+                r.push(k[field.toString()])
             })
             return r.reduce((a: any, b: any): any => { return a + b }) / this.count()
         }

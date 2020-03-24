@@ -1,13 +1,13 @@
 {
 	"name": "dbarray",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "Array with extras",
 	"main": "./dist/lib/DbArray.js",
 	"directories": {
 		"dist": "dist"
 	},
 	"scripts": {
-		"bundle": "browserify ./dist/DbArray.js -o ./dist/lib/DbArray.js"
+		"bundle": "browserify -p tinyify ./DbArray.js -o ./dist/DbArray.js"
 	},
 	"repository": {
 		"type": "git",
@@ -27,7 +27,8 @@
 	"homepage": "https://github.com/santojon/DbArray#readme",
 	"devDependencies": {
 		"browserify": "^16.5.0",
-		"ts-node": "^8.3.0",
-		"typescript": "^3.5.3"
+		"tinyify": "^2.5.2",
+		"ts-node": "^8.8.1",
+		"typescript": "^3.8.3"
 	}
 }

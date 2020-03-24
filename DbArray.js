@@ -1,0 +1,1 @@
+window.DbArray = require('./dist/lib/DbArray')
