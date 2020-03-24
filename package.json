@@ -4,6 +4,8 @@
 	"description": "Array with extras",
 	"main": "./dist/lib/DbArray.js",
 	"directories": {
+		"test": "test",
+		"src": "src",
 		"dist": "dist"
 	},
 	"scripts": {
