@@ -13,7 +13,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/santojon/Bhdr.git"
+		"url": "git+https://github.com/santojon/DbArray.git"
 	},
 	"keywords": [
 		"javascript",
